@@ -28,6 +28,7 @@ int main(int argc, char const *argv[])
 	char buffer[1024];
 	unsigned int line_number = 1;
 	ostack_t *stack = NULL;
+	int tmp;
 
 	if (argc < 2)
 		error_handle("USAGE: monty file\n", NULL);
@@ -42,6 +43,15 @@ int main(int argc, char const *argv[])
 		if (strlen(buffer) > 0)
 			execute(&stack, strtok(buffer, "\n\t "), line_number);
 		line_number++;
+
+		tmp = stack;
+		while (stack)
+		{
+			tmp = stack;
+			stack = stack->next;
+			free(tmp);
+		}
+		fclose(file);
 	}
 
 	fclose(file);
