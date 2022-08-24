@@ -9,7 +9,7 @@ int check_digit(char *svalue, unsigned int line_number)
 
 	while (svalue[i])
 	{
-		if (isdigit(svalue[i]) == 0 || (svalue[i]) == '-' && i != 0 || (svalue[0]) == '-')
+		if (isdigit((svalue[i]) == 0) || ((svalue[i]) == '-' && i != 0))
 			return (0);
 		i++;
 	}
