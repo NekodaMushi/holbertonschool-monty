@@ -1,5 +1,11 @@
 #include "monty.h"
-
+/**
+ * execute - Check and do instruction from file
+ * @stack: the linked list
+ * @token: token used as command
+ * @line_number: number of line
+ * Return: Nothing
+ */
 void execute(ostack_t **stack, char *token, unsigned int line_number)
 {
 	int i = 0;
@@ -21,7 +27,12 @@ void execute(ostack_t **stack, char *token, unsigned int line_number)
 	}
 	error_handle("L%d: unknown instruction %s\n", line_number, token);
 }
-
+/**
+ * main - First call of monty program
+ * @argc: argument counter
+ * @argv: argument value
+ * Return: Nothing
+ */
 int main(int argc, char const *argv[])
 {
 	FILE *file = NULL;
@@ -44,12 +55,6 @@ int main(int argc, char const *argv[])
 			execute(&stack, strtok(buffer, "\n\t "), line_number);
 		line_number++;
 	}
-	while (stack)
-	{
-		tmp = stack;
-		stack = stack->next;
-		free(tmp);
-	}
-	fclose(file);
+	_free(stack, file);
 	return 0;
 }

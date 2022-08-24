@@ -1,5 +1,11 @@
 #include "monty.h"
-
+/**
+ * add_dnodeint - Fct that add a node
+ *
+ * @head: Head of list
+ * @n: Value inside node
+ * Return: new node
+ */
 ostack_t *add_dnodeint(ostack_t **head, const int n)
 {
 	ostack_t *new = NULL;
@@ -20,7 +26,11 @@ ostack_t *add_dnodeint(ostack_t **head, const int n)
 
 	return (new);
 }
-
+/**
+ * print_dlistint - Fct only used to print list
+ * @h: head of list
+ * Return: Count
+ */
 size_t print_dlistint(const ostack_t *h)
 {
 	size_t count = 0;
