@@ -30,7 +30,7 @@ int main(int argc, char const *argv[])
 	ostack_t *stack = NULL;
 	ostack_t *tmp = stack;
 
-	if (argc < 2)
+	if (argc != 2)
 		error_handle("USAGE: monty file\n", NULL);
 
 	file = fopen(argv[1], "r");
