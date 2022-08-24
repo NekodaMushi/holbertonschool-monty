@@ -24,6 +24,7 @@ typedef struct instruction_s
 
 /* UTILS */
 void error_handle(char *format, ...);
+void _free(stack_t *stack, FILE *file);
 
 /* LIST_UTILS */
 ostack_t *add_dnodeint(ostack_t **head, const int n);

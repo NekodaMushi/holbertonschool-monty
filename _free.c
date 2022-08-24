@@ -5,7 +5,7 @@
  * @fd: the file to close
  * Return: None
  */
-void _free(stack_t *stack, FILE *file)
+void _free(ostack_t *stack, FILE *file)
 {
 	ostack_t *tmp = stack;
 

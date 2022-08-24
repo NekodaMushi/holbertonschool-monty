@@ -39,7 +39,6 @@ int main(int argc, char const *argv[])
 	char buffer[1024];
 	unsigned int line_number = 1;
 	ostack_t *stack = NULL;
-	ostack_t *tmp = stack;
 
 	if (argc != 2)
 		error_handle("USAGE: monty file\n", NULL);
