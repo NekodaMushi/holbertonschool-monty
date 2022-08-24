@@ -1,5 +1,11 @@
 #include "monty.h"
-
+/**
+ * error_handle - Fct dealing with errors
+ *
+ * @format: format used
+ *
+ * Return: Nothing
+ */
 void error_handle(char *format, ...)
 {
 	va_list args;

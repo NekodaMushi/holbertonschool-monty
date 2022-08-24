@@ -2,7 +2,7 @@
 /**
  * _free - fct freing arguments and close file
  * @stack: the linked list
- * @fd: the file to close
+ * @file: the file to close
  * Return: None
  */
 void _free(ostack_t *stack, FILE *file)

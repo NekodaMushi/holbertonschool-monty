@@ -55,5 +55,5 @@ int main(int argc, char const *argv[])
 		line_number++;
 	}
 	_free(stack, file);
-	return 0;
+	return (0);
 }
