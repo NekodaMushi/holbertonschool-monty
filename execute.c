@@ -1,3 +1,4 @@
+#include "monty.h"
 /**
  * execute - Check and do instruction from file
  * @stack: the linked list
