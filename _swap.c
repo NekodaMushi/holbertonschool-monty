@@ -5,7 +5,7 @@
  * @line_number: line's number in file
  * Return: Nothing
  */
-void _swap(stack_t **stack, unsigned int line_number)
+void _swap(ostack_t **stack, unsigned int line_number)
 {
 	int tmp;
 
