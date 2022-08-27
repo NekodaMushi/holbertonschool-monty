@@ -13,6 +13,7 @@ void execute(ostack_t **stack, char *token, unsigned int line_number)
 		{"push", _push},
 		{"pall", _pall},
 		{"pint", _pint},
+		{"pop", _pop},
 		{NULL, NULL}};
 
 	if (!token)
