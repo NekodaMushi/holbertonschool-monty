@@ -35,6 +35,8 @@ void _push(ostack_t **stack, unsigned int line_number);
 void _pall(ostack_t **stack, unsigned int line_number);
 void _pint(ostack_t **stack, unsigned int line_number);
 void _pop(ostack_t **stack, unsigned int line_number);
+void _swap(stack_t **stack, unsigned int line_number);
+
 /* Main fct */
 int main(int argc, char const *argv[]);
 void execute(ostack_t **stack, char *token, unsigned int line_number);
