@@ -12,6 +12,7 @@ void execute(ostack_t **stack, char *token, unsigned int line_number)
 	instruction_t search[] = {
 		{"push", _push},
 		{"pall", _pall},
+		{"pint", _pint},
 		{NULL, NULL}};
 
 	if (!token)
