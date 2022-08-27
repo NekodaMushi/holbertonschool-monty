@@ -33,6 +33,7 @@ size_t print_dlistint(const ostack_t *h);
 /* OPCODES */
 void _push(ostack_t **stack, unsigned int line_number);
 void _pall(ostack_t **stack, unsigned int line_number);
+void _pint(ostack_t **stack, unsigned int line_number);
 
 /* Main fct */
 int main(int argc, char const *argv[]);
